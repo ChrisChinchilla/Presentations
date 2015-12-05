@@ -1,0 +1,30 @@
+.reveal .slides {
+  background: #F5F1DE;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  /*padding: 30px;*/
+  /*zoom: 1;*/
+  border: 15px black solid;
+}
+
+.reveal .slides > section.stack {
+      padding: 20px 0px;
+}
+
+.reveal h1,
+.reveal h2 {
+  font-size: 2em;
+}
+
+.reveal .stretch {
+  max-width: 90%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.reveale strong,
+.reveal b {
+  font-weight: bold;
+}
