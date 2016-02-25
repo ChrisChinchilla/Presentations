@@ -6,7 +6,7 @@ In this presentation I would like to explore the new projects created by and wit
 We will look at:
 
 - What can be accomplished with 'open' Swift
-- What;s missing from 'open' Swift
+- What's missing from 'open' Swift
 - Back end Swift
 - Swift on Linux
 - Swift on Windows
