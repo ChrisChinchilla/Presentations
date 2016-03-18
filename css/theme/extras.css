@@ -71,3 +71,10 @@
   margin-right: 0.25em;
   vertical-align: -0.7em;
 }
+
+.reveal section img {
+    margin: 15px 0px;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
