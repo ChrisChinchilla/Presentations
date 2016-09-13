@@ -1,8 +1,12 @@
 # LaTeX - CSS for Print
 
-Why would I want to introduce an old print technology to CSS enthusiasts? Firstly because it's interesting to see one of the predecessors of the graphical design tools we now use so freely, but also because it's a fantastic tool for any of us needing to create multi-format projects.
+# Getting a 30 Year Old Technology to do things it doesn't want to
 
-In this presentation I will introduce you to the confusing, but wonderful world of LaTeX and Pandoc and how to fit them into your existing development workflows to create PDFs, ePub and image versions of your content without too much effort.
+For crazy 'reasons' I decided to use LaTeX, a technology designed for academic papers, to make a board game. I want to show you why and how.
+
+Why would I want to introduce an old print technology to modern web enthusiasts? Firstly because it's interesting to see one of the predecessors of the graphical design tools we now use so freely, but also because it's a fantastic, if inflexible tool for anyone needing to create multi-format projects.
+
+In this presentation I will introduce you to the confusing, but wonderful world of LaTeX and how to use it to create PDFs, ePub and image versions of your content without too much effort.
 
 In this presentation I will cover:
 
