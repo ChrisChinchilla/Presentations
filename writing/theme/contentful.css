@@ -1,0 +1,376 @@
+/* Fonts */
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=c54b0359-6164-4243-960a-5105a2c3bfa4");
+@font-face {
+    font-family: "Avenir Next W01_n5";
+    src: url("contentful_assets/fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot")
+}
+
+@font-face {
+    font-family: "Avenir Next W01";
+    src: url("contentful_assets/fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
+    src: url("contentful_assets/fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"), url("contentful_assets/fonts/2cd55546-ec00-4af9-aeca-4a3cd186da53.woff2") format("woff2"), url("contentful_assets/fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"), url("contentful_assets/fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"), url("contentful_assets/fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Avenir Next W01_i5";
+    src: url("contentful_assets/fonts/d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix") format("eot")
+}
+
+@font-face {
+    font-family: "Avenir Next W01";
+    src: url("contentful_assets/fonts/d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix");
+    src: url("contentful_assets/fonts/d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix") format("eot"), url("contentful_assets/fonts/7377dbe6-f11a-4a05-b33c-bc8ce1f60f84.woff2") format("woff2"), url("contentful_assets/fonts/92b66dbd-4201-4ac2-a605-4d4ffc8705cc.woff") format("woff"), url("contentful_assets/fonts/18839597-afa8-4f0b-9abb-4a30262d0da8.ttf") format("truetype"), url("contentful_assets/fonts/1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585.svg#1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585") format("svg");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Avenir Next W01_n6";
+    src: url("contentful_assets/fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix") format("eot")
+}
+
+@font-face {
+    font-family: "Avenir Next W01";
+    src: url("contentful_assets/fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix");
+    src: url("contentful_assets/fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix") format("eot"), url("contentful_assets/fonts/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2") format("woff2"), url("contentful_assets/fonts/f26faddb-86cc-4477-a253-1e1287684336.woff") format("woff"), url("contentful_assets/fonts/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf") format("truetype"), url("contentful_assets/fonts/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg#a89d6ad1-a04f-4a8f-b140-e55478dbea80") format("svg");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Avenir Next W01_n7";
+    src: url("contentful_assets/fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix") format("eot")
+}
+
+@font-face {
+    font-family: "Avenir Next W01";
+    src: url("contentful_assets/fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix");
+    src: url("contentful_assets/fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix") format("eot"), url("contentful_assets/fonts/aad99a1f-7917-4dd6-bbb5-b07cedbff64f.woff2") format("woff2"), url("contentful_assets/fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff") format("woff"), url("contentful_assets/fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf") format("truetype"), url("contentful_assets/fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d") format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+
+.reveal p {
+    margin: 1em;
+}
+
+.reveal pre code {
+    max-height: 700px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.reveal section img {
+    max-height: 500px;
+}
+
+.reveal section img.noborder, .reveal section img.screenshot {
+    border: none;
+    box-shadow: none;
+}
+
+
+/*.reveal table .red {*/
+
+
+/*background-color: #dc322f;*/
+
+
+/*}*/
+
+
+/*.reveal table .green {*/
+
+
+/*background-color: #2aa198;*/
+
+
+/*}*/
+
+.cf-logo {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    xwidth: 70%;
+    xbackground-color: rgba(255, 255, 255, 0.8);
+    display: none;
+    width: 10%;
+}
+
+.cf-logo img {
+    width: 100%;
+    max-width: 150px;
+    min-width: 100px;
+}
+
+.reveal .title-slide {
+    xdisplay: flex !important;
+    xflex-direction: column;
+}
+
+.reveal .title-slide h1 {
+    xmargin-bottom: 200px;
+    margin: 20px 0;
+}
+
+.reveal .title-slide h3 {
+    margin-top: 20px;
+}
+
+.reveal .title-logo {
+    border: none;
+    box-shadow: none;
+    width: 30%;
+    xmargin-bottom: 100px;
+}
+
+.reveal .title-logo-white {
+    border: none;
+    box-shadow: none;
+    width: 300px;
+    xmargin-bottom: 180px;
+    background: none;
+}
+
+.reveal .brand-bar {
+    background-image: linear-gradient(90deg, #4FB4DF 33%, #FFDD73 33%, #FFDD73 66%, #FF765C 66%);
+    height: 6px;
+    width: 340px;
+    margin: 30px auto;
+}
+
+
+/** GLOBAL Fonts **/
+
+.reveal {
+    font-size: 38px;
+}
+
+.reveal .has-dark-background {
+    color: #FFF;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+    font-family: 'Avenir Next W01', "Source Sans Pro", Helvetica, sans-serif;
+    color: #1F3040;
+    font-weight: 700;
+}
+
+.reveal h1 {
+    font-size: 2.5em;
+    color: #FFF;
+}
+
+.reveal h2 {
+    font-size: 1.7em;
+}
+
+.reveal h3 {
+    font-size: 1.2em;
+}
+
+
+/* COLOR */
+
+body .reveal .white {
+    color: rgba(255, 255, 255, 1);
+}
+
+.reveal blockquote {
+    display: block;
+    position: relative;
+    width: 70%;
+    margin: 20px auto;
+    padding: 5px;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.reveal blockquote p:first-child, .reveal blockquote p:last-child {
+    display: inline-block;
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote:after {
+    color: #ccc;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.7em;
+}
+
+
+/* Allows to have two equal columns on a slide */
+
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.columns>div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.columns>div>img {
+    max-height: 700px;
+}
+
+.columns>.align-top {
+    align-items: flex-start;
+}
+
+.columns>.column {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.columns>.column span {
+    display: block;
+    text-align: left;
+    font-size: 80%;
+}
+
+.columns>.column .header {
+    font-weight: bold;
+}
+
+.columns>.column .text-icon img {
+    float: left;
+    margin-right: 30px;
+    max-height: 100px;
+}
+
+
+/* Allows to render words in a sequence equally distributed */
+
+.sequence {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sequence> :nth-child(odd) {}
+
+.sequence> :nth-child(even) {
+    color: #555a5f;
+}
+
+.reveal .sequence>* {
+    padding: 10px;
+}
+
+.sequence>.box {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #EEE;
+    border: 2px solid #333;
+}
+
+
+/* CODE */
+
+.reveal pre code.small.json {
+    xfont-size: 80%;
+    line-height: 100%;
+}
+
+
+/* Inline code in text */
+
+code {
+    background-color: #EEE;
+    padding: 3px 10px !important;
+    color: #3072BE;
+    text-transform: none;
+}
+
+section iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+}
+
+video {
+    height: 500px;
+}
+
+.reveal .speaker-notes a {
+    color: white;
+    text-decoration: underline;
+}
+
+.reveal .image-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reveal .image-row div {}
+
+.reveal .image-row div img {
+    box-shadow: none;
+    border: none;
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.light-grey {
+    color: #8f8f8f;
+}
+
+.reveal .caption {
+    font-size: 70%;
+}
+
+.reveal .text-left {
+    text-align: left;
+    align-self: flex-start;
+}
+
+.reveal video {
+    height: 95%;
+}
+
+.reveal video.border, .reveal iframe.border {
+    border: 4px solid #222;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.reveal .nocaps {
+    text-transform: none;
+}
+
+.reveal .footnote {
+    font-size: 70%;
+    xtext-align: right;
+    color: #2b2b2b;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.grid>div {
+    flex: 1 1 45%;
+    margin: 0 20px 20px 0;
+}
+
+.grid>div>img {
+    height: 100px;
+}

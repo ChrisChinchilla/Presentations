@@ -1,0 +1,12 @@
+{
+    "history": true,
+    "width": 1280,
+    "height": 960,
+    "minScale": 0.1,
+    "maxScale": 5,
+    "viewDistance": 3,
+    "center": true,
+    "progress": true,
+    "controls": false,
+    "margin": 0.1
+}
