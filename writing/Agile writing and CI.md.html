@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+</head>
+<body>
+<h1 id="agile-writing-and-ci">Agile writing and CI</h1>
+<p>I am new to this, it's not complete, more a bundle of ideas.</p>
+<h2 id="why">Why</h2>
+<p>Documentaion comes from a variety of sources, or we are human and don't spot everything. Using CI tools for writing we can make some checks part of a software build process to help us spot mistakes and point them out to other contributors.</p>
+<p>As a bonus, we can also use CI tools to automate some common documentation tasks, not just to save us time but again ti help us spot inaccuracies and problems.</p>
+<h2 id="spelling-grammar-and-good-writing">Spelling, Grammar and good writing</h2>
+<h3 id="spelling">Spelling</h3>
+<p>At the moment I am using 'markdown-spellcheck', this is mostly for Markdown, there are other similar options for other languages, or at somepoint ideally I want to use a wrapper around aspell as that's more integrated with desktop clients and people can share a dictionary amongst the company.</p>
+<h4 id="show-codeship-simple-example">Show Codeship simple example</h4>
+<p>https://app.codeship.com/projects/157409/configure_tests</p>
+<p>Show how dictionary is a gitsubmodule and how it works.</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">mdspell</span> -r -n -a --en-us *.md <span class="kw">||</span> <span class="fu">true</span></code></pre></div>
+<p>This runs the spell check over all markdown files in report mode (<code>-r</code>), ignoring numbers (<code>-n</code>) and acronyms (<code>-a</code>) with a US English dictionary. There are more configuration options available.</p>
+<p>What does <code>true</code> mean and other ways of doing this with other CI tools.</p>
+<p>Then show the output by forcing a build, mention how this could be improved in the future, and do you want to break teh build or not. Ideally a linter is meant as guidance, not punishment.</p>
+<h3 id="grammar-writing-better">Grammar / Writing better</h3>
+<p>What exactly this means is unclear, but these tools can help you spot potential clarity of writing issues.</p>
+<p>My favourite is the 'write-good' linter, but there are others available too.</p>
+<p>It works in a similar way to the spellshcker.</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">write-good</span> *.md <span class="kw">||</span> <span class="fu">true</span></code></pre></div>
+<p>The main options are to include or exclude specific tests,</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">write-good</span> *.md --weasel --so</code></pre></div>
+<p>Or by excluding them with <code>no-</code>:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">write-good</span> *.md --no-weasel --no-so</code></pre></div>
+<p>Again, show examples and output, same as before really.</p>
+<h2 id="testing-code">Testing code</h2>
+<p>Code examples in docs that don't work or are outdted are a poor user experience and there are a variety of ways to test them, that can depend on if it's an API, what programming language etc.</p>
+<p>For our API we are currently using Dredd, which is primarily for APIs.</p>
+<p>Show examples of API blueprint, then Travis output and hooks examples. Hooks allow you to execute some processing around the tests, clean up, initialisation etc.</p>
+<p>Testing inline code is something I'm still trying.</p>
+<p><strong>??</strong></p>
+<h2 id="images-and-videos">Images and Videos</h2>
+<p>These are getting more interesting, and I haven't completely implemented these myself. Especially with asciinema, this is somewhat hypothetical.</p>
+<p>The wonderful asciinema records terminal output as json and then embed it into docs. So in theory, using it's JSON format, you could generate this semi-automatically and then embed the result into docs.</p>
+<p>Show json file, and can embed.</p>
+<script type="text/javascript" src="https://asciinema.org/a/14.js" id="asciicast-14" async data-autoplay="true" data-size="big"></script>
+<pre><code></code></pre>
+</body>
+</html>
